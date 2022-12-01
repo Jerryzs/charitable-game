@@ -281,11 +281,20 @@ function App() {
 
     if (index !== -1) {
       const q = quests[index]
+      const lvl = exp(xp).toLvl()
 
       quests.splice(index, 1)
-      setQuests([...quests, QuestGenerator.get(exp(xp).toLvl())])
+      setQuests([...quests, QuestGenerator.get(lvl)])
 
-      setXp(xp + q.reward)
+      const newXp = xp + q.reward
+      setXp(newXp)
+
+      const newLvl = exp(newXp).toLvl()
+      if (newLvl !== lvl && newLvl <= 100 && newLvl % 20 === 0) {
+        player.items.push(ITEMS[Math.floor(Math.random() * ITEMS.length)])
+        setPlayer({ ...player })
+      }
+
       setDonations(totalDonation - q.target.donation)
     } else {
       setDonations(totalDonation)
