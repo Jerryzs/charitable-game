@@ -111,22 +111,22 @@ const CHARITIES: Charity[] = [
 const FOODS: Food[] = [
   {
     name: "Burger",
-    time: 30,
-    energy: 20,
+    time: 60,
+    energy: 50,
     lore: "a Burger",
     image: "/assets/burger.jpg",
   },
   {
     name: "Salad",
-    time: 15,
-    energy: 6,
+    time: 30,
+    energy: 20,
     lore: "a Salad",
     image: "/assets/salad.jpg",
   },
   {
     name: "Juice",
-    time: 5,
-    energy: 2,
+    time: 10,
+    energy: 5,
     lore: "Some Orange Juice",
     image: "/assets/orange_juice.jpg",
   }
