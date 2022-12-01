@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Quest from "./Components/Quest";
 import Item from "./interfaces/Item";
 import Information from "./Components/Information";
