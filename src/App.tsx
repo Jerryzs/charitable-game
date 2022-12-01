@@ -212,7 +212,7 @@ QuestGenerator.setCharities(CHARITIES)
 
 function App() {
   const [player, setPlayer] = React.useState<Player>(SAMPLE_PLAYER)
-  const [xp, setXp] = React.useState<number>(1250000)
+  const [xp, setXp] = React.useState<number>(0)
   const [energy, setEnergy] = React.useState<number>(100)
   const [time, setTime] = React.useState<number>(480) // 480-960
   const [quests, setQuests] = React.useState<QuestType[]>(
