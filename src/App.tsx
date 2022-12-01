@@ -231,10 +231,12 @@ function App() {
 
   React.useEffect(() => {
     setPlayer({ ...player, exp: xp })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [xp])
 
   React.useEffect(() => {
     if (quests.length === 0) setQuests(QuestGenerator.getMany(exp(xp).toLvl(), 3))
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quests])
 
   const handleLocationChange = (lIndex: number, tIndex: number) => {
