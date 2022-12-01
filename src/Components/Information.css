@@ -30,6 +30,7 @@
   /* justify-content: space-between; */
   margin-bottom: 1.55em;
   gap: 0.5em;
+  min-height: 76px;
 }
 
 .information h6 {
