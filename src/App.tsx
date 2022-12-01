@@ -204,7 +204,7 @@ const SAMPLE_PLAYER: Player = {
   name: "Player 1",
   exp: 50,
   energy: 40,
-  items: [...ITEMS],
+  items: [],
 }
 
 QuestGenerator.setLocations(LOCATIONS)
@@ -331,7 +331,7 @@ function App() {
               <Quest quests={quests} />
             </div>
             <div>
-              <Information player={player} xp={xp} energy={energy} items={ITEMS} />
+              <Information player={player} xp={xp} energy={energy} items={player.items} />
             </div>
           </div>
           <div className="actionComponent">
