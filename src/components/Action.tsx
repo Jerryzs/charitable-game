@@ -1,11 +1,11 @@
-import React from "react";
-import Modal from "react-modal"
-import Charity from "../interfaces/Charity";
-import Food from "../interfaces/Food";
-import Location from "../interfaces/Location";
-import Transportation from "../interfaces/Transportation";
-import timer from "../libraries/Timer";
-import "./Action.css";
+import React from 'react'
+import Modal from 'react-modal'
+import Charity from '../interfaces/Charity'
+import Food from '../interfaces/Food'
+import Location from '../interfaces/Location'
+import Transportation from '../interfaces/Transportation'
+import timer from '../libraries/Timer'
+import './Action.css'
 
 Modal.setAppElement('#root')
 
@@ -80,17 +80,17 @@ const Action = ({
           >
             {modalState === 0
               ? locations.map((location, index) => (
-                  <button
-                    key={`loc_${location.name.replaceAll(/[^a-z0-9]/gi, '_')}`}
-                    className="location"
-                    onClick={() => handleButtonClick(0, index)}
-                  >
-                    <span style={{ backgroundImage: `url(${location.image})` }}></span>
-                    <span>{location.name.toUpperCase()}</span>
-                  </button>
-                ))
-            : modalState === 1
-              ? charities.map((charity, index) => (
+                <button
+                  key={`loc_${location.name.replaceAll(/[^a-z0-9]/gi, '_')}`}
+                  className="location"
+                  onClick={() => handleButtonClick(0, index)}
+                >
+                  <span style={{ backgroundImage: `url(${location.image})` }}></span>
+                  <span>{location.name.toUpperCase()}</span>
+                </button>
+              ))
+              : modalState === 1
+                ? charities.map((charity, index) => (
                   <button
                     key={`cha_${charity.name.replaceAll(/[^a-z0-9]/gi, '_')}`}
                     className="charity"
@@ -100,29 +100,29 @@ const Action = ({
                     <span>{charity.name.toUpperCase()}</span>
                   </button>
                 ))
-            : modalState === 2
-              ? foodOptions.map((foodOption, index) => (
-                <button
-                  key={`cha_${foodOption.name.replaceAll(/[^a-z0-9]/gi, '_')}`}
-                  className="foodOption"
-                  onClick={() => handleButtonClick(2, index)}
-                >
-                  <span style={{ backgroundImage: `url(${foodOption.image})` }}></span>
-                  <span>{foodOption.name.toUpperCase()}</span>
-                </button>
-              ))
-            : modalState === 3
-              ? transportations.map((transportation, index) => (
-                <button
-                  key={`tra_${transportation.type}`}
-                  className="transportation"
-                  onClick={() => handleButtonClick(3, tempLoc.current, index)}
-                >
-                  <span style={{ backgroundImage: `url(${transportation.icon})` }}></span>
-                  <span>{transportation.type.toUpperCase()}</span>
-                </button>
-              ))
-            : undefined
+                : modalState === 2
+                  ? foodOptions.map((foodOption, index) => (
+                    <button
+                      key={`cha_${foodOption.name.replaceAll(/[^a-z0-9]/gi, '_')}`}
+                      className="foodOption"
+                      onClick={() => handleButtonClick(2, index)}
+                    >
+                      <span style={{ backgroundImage: `url(${foodOption.image})` }}></span>
+                      <span>{foodOption.name.toUpperCase()}</span>
+                    </button>
+                  ))
+                  : modalState === 3
+                    ? transportations.map((transportation, index) => (
+                      <button
+                        key={`tra_${transportation.type}`}
+                        className="transportation"
+                        onClick={() => handleButtonClick(3, tempLoc.current, index)}
+                      >
+                        <span style={{ backgroundImage: `url(${transportation.icon})` }}></span>
+                        <span>{transportation.type.toUpperCase()}</span>
+                      </button>
+                    ))
+                    : undefined
             }
           </div>
         </Modal>
@@ -163,7 +163,7 @@ const Action = ({
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Action;
+export default Action

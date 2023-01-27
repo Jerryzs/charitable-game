@@ -1,6 +1,6 @@
-import Charity from "../interfaces/Charity"
-import Location from "../interfaces/Location"
-import QuestType from "../interfaces/QuestType"
+import Charity from '../interfaces/Charity'
+import Location from '../interfaces/Location'
+import QuestType from '../interfaces/QuestType'
 
 const MIN_DIFFICULTY = 0.5
 const MAX_DIFFICULTY = 2.5

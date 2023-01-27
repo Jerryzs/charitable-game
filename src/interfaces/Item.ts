@@ -1,4 +1,4 @@
-export type Factor = "reward" | "time" | "energy"
+export type Factor = 'reward' | 'time' | 'energy'
 
 interface Item {
   id: number

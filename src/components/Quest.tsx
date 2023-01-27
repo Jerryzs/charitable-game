@@ -7,7 +7,7 @@ let renderedQuests = [] as QuestType[]
 const updateRenderedQuestList = (quests: QuestType[]) => {
   renderedQuests = renderedQuests.filter((quest) => !quest.complete)
 
-  let newQuests = quests.filter((quest) => !renderedQuests.includes(quest))
+  const newQuests = quests.filter((quest) => !renderedQuests.includes(quest))
   renderedQuests.forEach(quest => {
     if(!quests.includes(quest)) {
       quest.complete = true

@@ -1,9 +1,9 @@
-import React from "react";
-import { Line } from "rc-progress";
-import "./Information.css";
-import Player from "../interfaces/Player";
-import exp from "../libraries/Exp";
-import Item from "../interfaces/Item";
+import React from 'react'
+import { Line } from 'rc-progress'
+import './Information.css'
+import Player from '../interfaces/Player'
+import exp from '../libraries/Exp'
+import Item from '../interfaces/Item'
 
 const Information = ({
   player, xp, energy, items
@@ -16,7 +16,7 @@ const Information = ({
   const _items = [...items]
 
   ;(() => {
-    let index = (() => {
+    const index = (() => {
       let index = 0
       for (let i = 0; i < _items.length; i++) {
         if (_items[i].id === 2) index = i
@@ -53,7 +53,7 @@ const Information = ({
         }
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Information;
+export default Information

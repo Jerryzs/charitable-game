@@ -1,7 +1,7 @@
-import Charity from "../interfaces/Charity"
-import Item from "../interfaces/Item"
-import Location from "../interfaces/Location"
-import Transportation from "../interfaces/Transportation"
+import Charity from '../interfaces/Charity'
+import Item from '../interfaces/Item'
+import Location from '../interfaces/Location'
+import Transportation from '../interfaces/Transportation'
 
 const rp = {
   calc: (time: number, location: Location, charity: Charity, travel: Transportation, lvl: number, items: Item[]) => {
