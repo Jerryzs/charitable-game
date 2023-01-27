@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/charitable-game/static/css/main.444940bf.css",
+    "main.js": "/charitable-game/static/js/main.5d8206f2.js",
+    "static/media/park.jpg": "/charitable-game/static/media/park.60822ab0e22db14eee08.jpg",
+    "static/media/streets.jpg": "/charitable-game/static/media/streets.6ae671b37a1511aead83.jpg",
+    "static/media/mall.jpg": "/charitable-game/static/media/mall.a69cbb210e74b85fe1bc.jpg",
+    "static/media/school.jpg": "/charitable-game/static/media/school.c0226bdd9e4f3849623f.jpg",
+    "static/media/ncc.png": "/charitable-game/static/media/ncc.5de9870e68e144d559c1.png",
+    "static/media/ccms.png": "/charitable-game/static/media/ccms.082b1a625f160b02d520.png",
+    "static/media/era.png": "/charitable-game/static/media/era.63f3b94c981ca91bf7f9.png",
+    "static/media/bus.jpg": "/charitable-game/static/media/bus.ed7de75725022c347f49.jpg",
+    "static/media/speech.png": "/charitable-game/static/media/speech.51a9ec917096ad12f73b.png",
+    "static/media/car.jpg": "/charitable-game/static/media/car.d95564e56a3046313af5.jpg",
+    "static/media/salad.jpg": "/charitable-game/static/media/salad.5e8ea1651b64e3d0b898.jpg",
+    "static/media/bike.jpg": "/charitable-game/static/media/bike.2d428de14939448959b6.jpg",
+    "static/media/ccm.jpg": "/charitable-game/static/media/ccm.5127977f77d89ba93d01.jpg",
+    "static/media/burger.jpg": "/charitable-game/static/media/burger.9574436d385706f711ce.jpg",
+    "static/media/gp.jpg": "/charitable-game/static/media/gp.39c6bf4a921d060da583.jpg",
+    "static/media/gw.jpg": "/charitable-game/static/media/gw.cfeec261d3ea2efbf694.jpg",
+    "static/media/orange_juice.jpg": "/charitable-game/static/media/orange_juice.331c531da36d8358bbff.jpg",
+    "static/media/otp.png": "/charitable-game/static/media/otp.a004b9bbaaf615a8d0e2.png",
+    "static/media/car.svg": "/charitable-game/static/media/car.5ff603279e8d29f807d7593b2299fdde.svg",
+    "static/media/tent.svg": "/charitable-game/static/media/tent.70ff561249daaf27a7a94d6e7d387119.svg",
+    "index.html": "/charitable-game/index.html",
+    "main.444940bf.css.map": "/charitable-game/static/css/main.444940bf.css.map",
+    "main.5d8206f2.js.map": "/charitable-game/static/js/main.5d8206f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.444940bf.css",
+    "static/js/main.5d8206f2.js"
+  ]
+}
