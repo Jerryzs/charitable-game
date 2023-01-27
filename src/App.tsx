@@ -114,42 +114,42 @@ const FOODS: Food[] = [
     time: 60,
     energy: 50,
     lore: 'a Burger',
-    image: require('./assets/charities/ncc.png'),
+    image: require('./assets/foods/burger.jpg'),
   },
   {
     name: 'Salad',
     time: 30,
     energy: 20,
     lore: 'a Salad',
-    image: '/assets/salad.jpg',
+    image: require('./assets/foods/salad.jpg'),
   },
   {
     name: 'Juice',
     time: 10,
     energy: 5,
     lore: 'Some Orange Juice',
-    image: '/assets/orange_juice.jpg',
+    image: require('./assets/foods/orange_juice.jpg'),
   }
 ]
 
 const TRANSPORTATIONS: Transportation[] = [
   {
     type: 'bike',
-    icon: '/assets/bike.jpg',
+    icon: require('./assets/transports/bike.jpg'),
     time: [20, 50],
     effect: 1.2,
     energy: 10,
   },
   {
     type: 'bus',
-    icon: '/assets/bus.jpg',
+    icon: require('./assets/transports/bus.jpg'),
     time: [10, 30],
     effect: 1,
     energy: 5
   },
   {
     type: 'car',
-    icon: '/assets/car.jpg',
+    icon: require('./assets/transports/car.jpg'),
     time: [5, 15],
     effect: 0.7,
     energy: 1
@@ -163,7 +163,7 @@ const ITEMS: Item[] = [
     factor: 'reward',
     effect: 1.4,
     lore: 'Travel like a car, green like a bus',
-    image: '/assets/items/car.svg'
+    image: require('./assets/items/car.svg')
   },
   {
     id: 2,
@@ -171,7 +171,7 @@ const ITEMS: Item[] = [
     factor: 'reward',
     effect: 1.2,
     lore: 'Blend in with the youths',
-    image: '/assets/items/ccm.jpg'
+    image: require('./assets/items/ccm.jpg')
   },
   {
     id: 3,
@@ -179,7 +179,7 @@ const ITEMS: Item[] = [
     factor: 'reward',
     effect: 1.2,
     lore: 'Even more affable among the youths',
-    image: '/assets/items/ccms.png'
+    image: require('./assets/items/ccms.png')
   },
   {
     id: 4,
@@ -187,7 +187,7 @@ const ITEMS: Item[] = [
     factor: 'reward',
     effect: 2,
     lore: 'Very persuasive',
-    image: '/assets/items/speech.png'
+    image: require('./assets/items/speech.png')
   },
   {
     id: 5,
@@ -195,7 +195,7 @@ const ITEMS: Item[] = [
     factor: 'energy',
     effect: 0.5,
     lore: 'Lightweight and easy to setup!',
-    image: '/assets/items/tent.svg'
+    image: require('./assets/items/tent.svg')
   }
 ]
 
