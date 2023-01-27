@@ -6,6 +6,7 @@
   "homepage": "https://jerryzs.github.io/charitable-game",
   "dependencies": {
     "gh-pages": "^4.0.0",
+    "prettier": "^2.8.0",
     "rc-progress": "^3.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -16,6 +17,10 @@
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
     "@types/react-modal": "^3.13.1",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "eslint-plugin-react": "^7.31.11",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.3"
   },
