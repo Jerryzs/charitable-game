@@ -1,35 +1,35 @@
-import React from "react";
-import Quest from "./Components/Quest";
-import Item from "./interfaces/Item";
-import Information from "./Components/Information";
-import Action from "./Components/Action";
-import QuestType from "./interfaces/QuestType";
-import QuestGenerator from "./libraries/QuestGenerator";
-import exp from "./libraries/Exp"
-import rp from "./libraries/RewardsProgram";
-import Player from "./interfaces/Player";
-import Location from "./interfaces/Location";
-import Charity from "./interfaces/Charity";
-import Food from "./interfaces/Food";
-import Transportation from "./interfaces/Transportation";
-import "./App.css";
+import React from 'react'
+import Quest from './components/Quest'
+import Item from './interfaces/Item'
+import Information from './components/Information'
+import Action from './components/Action'
+import QuestType from './interfaces/QuestType'
+import QuestGenerator from './libraries/QuestGenerator'
+import exp from './libraries/Exp'
+import rp from './libraries/RewardsProgram'
+import Player from './interfaces/Player'
+import Location from './interfaces/Location'
+import Charity from './interfaces/Charity'
+import Food from './interfaces/Food'
+import Transportation from './interfaces/Transportation'
+import './App.css'
 
 const LOCATIONS: Location[] = [
   {
     name: 'the park',
-    image: '/assets/park.jpg'
+    image: require('./assets/scenes/park.jpg')
   },
   {
     name: 'the mall',
-    image: '/assets/mall.jpg'
+    image: require('./assets/scenes/mall.jpg')
   },
   {
     name: 'the streets',
-    image: '/assets/streets.jpg'
+    image: require('./assets/scenes/streets.jpg')
   },
   {
     name: 'the school',
-    image: '/assets/school.jpg'
+    image: require('./assets/scenes/school.jpg')
   },
 ]
 
@@ -38,7 +38,7 @@ const CHARITIES: Charity[] = [
     name: 'the Clean Air Task Force',
     abbr: 'the CATF',
     desc: 'Reduce and regulate air pollution',
-    icon: '/assets/catf.jpg',
+    icon: require('./assets/charities/catf.jpg'),
     effect: {
       'the park': [1.0, 1.4],
       'the school': [1.1, 1.2],
@@ -50,7 +50,7 @@ const CHARITIES: Charity[] = [
     name: 'the Nature Conservacy of Canada',
     abbr: 'the NCC',
     desc: 'Conserve the nature',
-    icon: '/assets/ncc.png',
+    icon: require('./assets/charities/ncc.png'),
     effect: {
       'the school': [1.0, 1.4],
       'the streets': [0.5, 1.4],
@@ -62,7 +62,7 @@ const CHARITIES: Charity[] = [
     name: 'One Tree Planted',
     abbr: 'One Tree Planted',
     desc: '$1 donated = one tree planted',
-    icon: '/assets/otp.png',
+    icon: require('./assets/charities/otp.png'),
     effect: {
       'the park': [0.8, 1.5],
       'the school': [1.0, 1.3],
@@ -74,7 +74,7 @@ const CHARITIES: Charity[] = [
     name: 'Greenpeace',
     abbr: 'Greenpeace',
     desc: 'Our world cannot be green without peace',
-    icon: '/assets/gp.jpg',
+    icon: require('./assets/charities/gp.jpg'),
     effect: {
       'the streets': [0.9, 1.5],
       'the mall': [1.0, 1.1],
@@ -86,7 +86,7 @@ const CHARITIES: Charity[] = [
     name: 'the Electronic Recycling Association',
     abbr: 'the ERA',
     desc: 'Your old electronics, someone\'s new upgrade',
-    icon: '/assets/era.png',
+    icon: require('./assets/charities/era.png'),
     effect: {
       'the mall': [0.5, 1.8],
       'the school': [0.9, 1.4],
@@ -98,7 +98,7 @@ const CHARITIES: Charity[] = [
     name: 'Goodwill Industries',
     abbr: 'Goodwill',
     desc: 'Collecting and selling used goods',
-    icon: '/assets/gw.jpg',
+    icon: require('./assets/charities/gw.jpg'),
     effect: {
       'the school': [0.8, 1.6],
       'the mall': [1.2, 1.4],
@@ -110,25 +110,25 @@ const CHARITIES: Charity[] = [
 
 const FOODS: Food[] = [
   {
-    name: "Burger",
+    name: 'Burger',
     time: 60,
     energy: 50,
-    lore: "a Burger",
-    image: "/assets/burger.jpg",
+    lore: 'a Burger',
+    image: require('./assets/charities/ncc.png'),
   },
   {
-    name: "Salad",
+    name: 'Salad',
     time: 30,
     energy: 20,
-    lore: "a Salad",
-    image: "/assets/salad.jpg",
+    lore: 'a Salad',
+    image: '/assets/salad.jpg',
   },
   {
-    name: "Juice",
+    name: 'Juice',
     time: 10,
     energy: 5,
-    lore: "Some Orange Juice",
-    image: "/assets/orange_juice.jpg",
+    lore: 'Some Orange Juice',
+    image: '/assets/orange_juice.jpg',
   }
 ]
 
@@ -200,8 +200,8 @@ const ITEMS: Item[] = [
 ]
 
 const SAMPLE_PLAYER: Player = {
-  id: "player1",
-  name: "Player 1",
+  id: 'player1',
+  name: 'Player 1',
   exp: 50,
   energy: 40,
   items: [],
@@ -231,12 +231,10 @@ function App() {
 
   React.useEffect(() => {
     setPlayer({ ...player, exp: xp })
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [xp])
 
   React.useEffect(() => {
     if (quests.length === 0) setQuests(QuestGenerator.getMany(exp(xp).toLvl(), 3))
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quests])
 
   const handleLocationChange = (lIndex: number, tIndex: number) => {
@@ -363,7 +361,7 @@ function App() {
         </>
       )}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
